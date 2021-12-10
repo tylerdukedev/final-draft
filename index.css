@@ -1,4 +1,4 @@
-@import url('./globalVariables.css');
+@import url('../css/globalVariables.css');
 
 /* anchor element styling */
 a {
@@ -32,3 +32,12 @@ a {
 #grid__container {
     background-image: url('https://i.ytimg.com/vi/plF8mdhANMM/maxresdefault.jpg');
 }
+
+#news__post {
+    background-image: url('../assets/craftpix-net-123536-game-user-interface-for-rpg/Sliced Images/Menu/menu_bg.png')
+}
+
+#home__container {
+    background: var(--tertiary-bg-color);
+}
+
