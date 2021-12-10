@@ -9,21 +9,26 @@
 /* =================================== */
 body {
     background: var(--tertiary-bg-color-second);
+    overflow: hidden;
 }
 html {
     box-sizing: border-box !important;
     font-size: clamp(100%, 180%, 190%);
-    overflow: hidden;
 }
 
 
 *, *::before, *::after {
     font-family: 'Tangerine', cursive, sans-serif, serif;
     box-sizing: inherit !important;
+
 }
 
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* root block contains the Main element */
@@ -80,40 +85,90 @@ a {
 /* top level parent is #root */
 #root {
     display: flex;
+    flex-direction: column;
     position: relative;
     top: 4.5rem;
     right: 0.5rem;
     padding-left: 0;
 }
 
+/* main TOP grid below */
+
 #grid__container {
-    background-size: cover;
-    background-position: -0.9rem -8rem;
+    background-size: 90rem;
+    background-attachment: fixed;
+    background-position: 1rem -9rem;
     border-radius: 15px;
 }
 
-#news__post {
-    background: black;
-    height: 100%;
-    width: 100%;
+
+#item-left {
+    padding-left: 20px;
 }
+
+
+#item-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+caption {
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+/* news post container */
+#news__post {
+    background-size: 115% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+
+}
+
+/* news post table */
 #news__post--table {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--main-text-color);
 
 }
 
-#item-left {
+/* main content grid underneath the banner grid */
+#home__container {
+    text-align: center;
+    position: relative;
+    left: 3rem;
+    top: 25px;
+    border-radius: 15px;
 
 }
 
- #item-center {
-    display: flex;
-    align-items: center;
-     justify-content: center;
-     flex-direction: column;
+#home__container--row-one {
+}
 
+.home__container--item {
+
+}
+
+#home-item-left {
+
+}
+
+#home-item-center {
+
+}
+
+#home-item-right {
+
+}
+
+#home-item-right__img {
+    transform: scaleX(-1);
+    padding-top: 20px;
 }
 
 /* =================================== */
@@ -131,6 +186,6 @@ a {
 
     --tertiary-bg-color: #606c38;
     --tertiary-bg-color-second: #283618;
+    --bg-low-opacity: rgba(0, 0, 0, 0.50);
 
     --shadow: #000000;
-}
