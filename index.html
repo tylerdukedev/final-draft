@@ -6,7 +6,7 @@
 <!--    main script do not remove    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="./index.css">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="../css/index.css">
 
 </head>
 <body>
@@ -49,28 +49,27 @@
 
 <!--main container-->
 <main class="container-fluid" id="root">
+<!--    grid container -->
     <div class="container-fluid" id="grid__container">
         <div class="row" id="grid__container--row">
             <div class="col grid__container--item" id="item-left">
-                <section id="news__post">
-                    <table id="news__post--table">
+                <section class="table-responsive" id="news__post">
+                    <table class="table caption-top" id="news__post--table">
+                        <caption>News Post</caption>
                         <thead>
                         <tr>
-                            <th>News Post</th>
+                            <th scope="col">01/24/2024</th>
+                            <th scope="col">02/31/2024</th>
+                            <th scope="col">03/03/2024</th>
+                            <th scope="col">03/22/2024</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>12/28/2023:</td>
-                            <td>News Post Example</td>
-                        </tr>
-                        <tr>
-                            <td>12/31/2023: </td>
-                            <td>News Post Example 2</td>
-                        </tr>
-                        <tr>
-                            <td>01/12/2024: </td>
-                            <td>News Post Example 3</td>
+                            <th scope="row">Update Blog 102</th>
+                            <th scope="row">Update Blog 103</th>
+                            <th scope="row">"Uncharted Lands" out now!</th>
+                            <th scope="row">Servers down for maintenance</th>
                         </tr>
                         </tbody>
                     </table>
@@ -84,6 +83,46 @@
             </div>
 
             <div class="col grid__container--item" id="item-right">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="home__container">
+        <div class="row" id="home__container--row-one">
+            <div class="col home__container--item" id="home-item-left">
+                <h3>Gear Based Combat</h3>
+                <ul id="home__gear-info--list">
+                    <li class="gear-info--list__item">Over 400 unique items</li>
+                    <li class="gear-info--list__item">Unique gear-based skills</li>
+                    <li class="gear-info--list__item">Don't just feel powerful; be powerful
+                        over a thousand gear-based skill and class enhancements</li>
+                    <li class="class--list__item">Reset, customize and enhance your
+                        character anywhere, anytime</li>
+                </ul>
+            </div>
+            <div class="col home__container--item" id="home-item-center">
+                <h3>Class Based Skills</h3>
+                <ul id="home__class-info--list">
+                    <li class="class-info--list__item">6 classes; each with unique
+                    customization and gear options</li>
+                    <li class="class-info--list__item">Consistent class updates</li>
+                    <li class="class-info--list__item">Skill tree with over 100 skills</li>
+                    <li class="class-info--list__item">PvE, PvP, and PvPvE modes</li>
+                </ul>
+            </div>
+            <div class="col home__container--item" id="home-item-right">
+                <img rel="preload" src="../assets/craftpix-net-636003-free-dark-elf-pixel-art-asset-pack/PNG/Dark_Elves/Character7_face2.png" alt="Dark Elf Warrior" id="home-item-right__img">
+            </div>
+        </div>
+        <div class="row" id="home__container--row-two">
+            <div class="col home__container--item" id="home-two-item-left">
+
+            </div>
+            <div class="col home__container--item" id="home-two-item-center">
+
+            </div>
+            <div class="col home__container--item" id="home-two-item-right">
 
             </div>
         </div>
