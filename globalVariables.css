@@ -1,5 +1,5 @@
-@import url('../css/index.css');
-@import url('../css/globalEffects.css');
+@import url('./index.css');
+@import url('./globalEffects.css');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 /* =================================== */
 /* global styles start here */
