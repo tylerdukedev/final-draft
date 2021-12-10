@@ -1,7 +1,7 @@
 /* globally applied effects */
 /* such as animations and interactions */
-@import url('../css/globalVariables.css');
-@import url('../css/index.css');
+@import url('./globalVariables.css');
+@import url('./index.css');
 
 #nav,
 #grid__container,
