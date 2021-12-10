@@ -3,17 +3,36 @@
 @import url('./globalVariables.css');
 @import url('./index.css');
 
+@keyframes scroll {
+    0% {
+        background-position: 1rem 0;
+    }
+    100% {
+        background-position: 15rem -31rem;
+    }
+}
+
 #nav,
 #grid__container,
-#item-center {
+#item-center,
+caption {
     filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
 }
 
 #nav > #drop-nav:hover {
-    filter: drop-shadow(0 0 0.5rem var(--shadow));
+    filter: drop-shadow(0 0 0.1rem var(--main-text-color));
 }
 
 #grid__container--row {
     border-radius: 15px;
-    backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+#grid__container {
+    animation: scroll 30s linear infinite;
+    animation-direction: reverse;
+}
+
+#home__container {
+    filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
 }
