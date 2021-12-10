@@ -1,5 +1,9 @@
-@import url('./globalVariables.css');
+@import url('../css/globalVariables.css');
 
+/* body */
+body {
+    background-image: url('../img/battleground.png')
+}
 /* anchor element styling */
 a {
     color: var(--main-text-color);
@@ -11,7 +15,7 @@ a {
 }
 
 #drop-nav--container {
-    background-image: url('../assets/craftpix-net-123536-game-user-interface-for-rpg/Sliced Images/Login/btn_normal.png');
+    background-image: url('../img/btn_normal.png');
 }
 
 /* drop-nav styling */
@@ -34,10 +38,21 @@ a {
 }
 
 #news__post {
-    background-image: url('../assets/craftpix-net-123536-game-user-interface-for-rpg/Sliced Images/Menu/menu_bg.png')
+    background-image: url('../img/menu_bg.png')
 }
 
 #home__container {
-    background: var(--tertiary-bg-color);
+    background-image: url('../img/back_decor.png');
+
 }
 
+#home-item-left,
+#home-item-center {
+    background-image: url('../img/menu_bg.png');
+    list-style-image: url('../img/Icons_12.png');
+}
+
+
+#home__container--row-one {
+    background-image: url('../img/front_decor.png');
+}

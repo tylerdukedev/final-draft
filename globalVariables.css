@@ -1,6 +1,5 @@
-@import url('./index.css');
-@import url('./globalEffects.css');
-
+@import url('../css/index.css');
+@import url('../css/globalEffects.css');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 /* =================================== */
 /* global styles start here */
@@ -8,8 +7,10 @@
 /* set alternative box model */
 /* =================================== */
 body {
-    background: var(--tertiary-bg-color-second);
     overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
 }
 html {
     box-sizing: border-box !important;
@@ -139,19 +140,42 @@ caption {
 
 /* main content grid underneath the banner grid */
 #home__container {
-    text-align: center;
+    display: flex;
     position: relative;
-    left: 3rem;
+    flex-direction: column;
+    left: 2rem;
     top: 25px;
     border-radius: 15px;
 
+    background-size: cover;
+    background-position: 20% 15%;
+    background-repeat: no-repeat;
 }
 
 #home__container--row-one {
+    background-size: 100%;
+    background-position: 100% 85%;
+    background-repeat: no-repeat;
 }
 
 .home__container--item {
 
+}
+
+#home-item-left,
+#home-item-center {
+    background-size: 105% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-item-left h5,
+#home-item-center h5 {
+    padding-top: 20px;
 }
 
 #home-item-left {
@@ -168,8 +192,22 @@ caption {
 
 #home-item-right__img {
     transform: scaleX(-1);
-    padding-top: 20px;
+    padding-top: 120px;
+    position: relative;
+    bottom: 65px;
 }
+
+#home__gear-info--list,
+#home__class-info--list {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-position: inside;
+}
+
+
+
 
 /* =================================== */
 /* global styles end here*/
@@ -189,3 +227,4 @@ caption {
     --bg-low-opacity: rgba(0, 0, 0, 0.50);
 
     --shadow: #000000;
+}
