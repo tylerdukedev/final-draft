@@ -1,0 +1,19 @@
+/* globally applied effects */
+/* such as animations and interactions */
+@import url('../css/globalVariables.css');
+@import url('../css/index.css');
+
+#nav,
+#grid__container,
+#item-center {
+    filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
+}
+
+#nav > #drop-nav:hover {
+    filter: drop-shadow(0 0 0.5rem var(--shadow));
+}
+
+#grid__container--row {
+    border-radius: 15px;
+    backdrop-filter: blur(2.5px);
+}

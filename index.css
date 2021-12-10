@@ -1,0 +1,34 @@
+@import url('../css/globalVariables.css');
+
+/* anchor element styling */
+a {
+    color: var(--main-text-color);
+}
+
+/* nav parent styling */
+#nav {
+    background: var(--main-bg-color);
+}
+
+#drop-nav--container {
+    background-image: url('../assets/craftpix-net-123536-game-user-interface-for-rpg/Sliced Images/Login/btn_normal.png');
+}
+
+/* drop-nav styling */
+
+
+#register__btn,
+#login__btn {
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/* root main container styling */
+#root {
+    color: var(--main-text-color);
+    background: transparent;
+}
+
+#grid__container {
+    background-image: url('https://i.ytimg.com/vi/plF8mdhANMM/maxresdefault.jpg');
+}

@@ -1,0 +1,135 @@
+@import url('../css/index.css');
+@import url('../css/globalEffects.css');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+/* =================================== */
+/* global styles start here */
+/* all styles are mobile first */
+/* set alternative box model */
+/* =================================== */
+body {
+    background: var(--tertiary-bg-color-second);
+}
+html {
+    box-sizing: border-box !important;
+    font-size: clamp(100%, 180%, 190%);
+    overflow: hidden;
+}
+
+
+*, *::before, *::after {
+    font-family: 'Tangerine', cursive, sans-serif, serif;
+    box-sizing: inherit !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* root block contains the Main element */
+/* grid's parent element */
+
+
+/* default nav styles */
+#nav {
+    width: 100%;
+}
+
+#nav__list > .nav-item,
+#drop-nav__list > .nav-item {
+    padding-right: 1rem;
+}
+
+/* nav containers */
+
+#nav__list--container {
+    position: absolute;
+    justify-content: flex-end;
+    left: 14rem;
+    right: 0;
+    margin-left: auto;
+}
+
+/* navbar below main nav */
+/* drop-nav is child of nav container */
+#drop-nav {
+    top: 2.5rem;
+    margin-left: auto;
+}
+
+#drop-nav--container {
+    background-size: contain;
+    background-position: center right;
+    border-radius: 15px;
+    width: 7.7rem;
+}
+
+#nav > #drop-nav {
+    right: 5px;
+}
+
+.register__btn {
+    margin-left: -1rem;
+}
+
+.login__btn {
+    margin-left: -0.3rem;
+}
+
+/* root/main container starts below */
+/* top level parent is #root */
+#root {
+    display: flex;
+    position: relative;
+    top: 4.5rem;
+    right: 0.5rem;
+    padding-left: 0;
+}
+
+#grid__container {
+    background-size: cover;
+    background-position: -0.9rem -8rem;
+    border-radius: 15px;
+}
+
+#news__post {
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+#news__post--table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#item-left {
+
+}
+
+ #item-center {
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+}
+
+/* =================================== */
+/* global styles end here*/
+/* =================================== */
+
+/* =================================== */
+/* global variables start here*/
+/* =================================== */
+:root {
+    --main-bg-color: #dda15e;
+    --main-text-color: #fefae0;
+
+    --secondary-bg-color: #bc6c25;
+
+    --tertiary-bg-color: #606c38;
+    --tertiary-bg-color-second: #283618;
+
+    --shadow: #000000;
+}
