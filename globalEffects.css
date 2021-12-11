@@ -33,6 +33,7 @@ caption {
     animation-direction: reverse;
 }
 
-#home__container {
+#home__container--row-one,
+#home__container--row-two {
     filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
 }
