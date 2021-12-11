@@ -7,8 +7,7 @@
 /* set alternative box model */
 /* =================================== */
 body {
-    overflow: hidden;
-
+    overflow-x: hidden;
     background-size: cover;
     background-position: center;
 }
@@ -148,10 +147,12 @@ caption {
     border-radius: 15px;
 
     background-size: cover;
-    background-position: 20% 15%;
+    background-position: 20% 25%;
     background-repeat: no-repeat;
 }
 
+
+/* home container first row including gear based info and class based info*/
 #home__container--row-one {
     background-size: 100%;
     background-position: 100% 85%;
@@ -159,11 +160,12 @@ caption {
 }
 
 .home__container--item {
-
 }
 
 #home-item-left,
-#home-item-center {
+#home-item-center,
+#home-item-two-center,
+#home-item-two-right {
     background-size: 105% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,41 +176,82 @@ caption {
 }
 
 #home-item-left h5,
-#home-item-center h5 {
-    padding-top: 20px;
+#home-item-center h5,
+#home-item-two-center h5,
+#home-item-two-right h5 {
+    padding-top: 1.3rem;
 }
 
-#home-item-left {
+#home-item-two-left {
 
 }
 
-#home-item-center {
+/*#home-item-left {*/
 
-}
+/*}*/
 
-#home-item-right {
+/*#home-item-center {*/
 
-}
+/*}*/
+
+/*#home-item-right {*/
+
+/*}*/
 
 #home-item-right__img {
     transform: scaleX(-1);
     padding-top: 120px;
     position: relative;
+    bottom: 2rem;
+}
+
+#home-item-two-left__img{
+    padding-top: 120px;
+    position: relative;
     bottom: 65px;
+    left: 5rem;
 }
 
 #home__gear-info--list,
-#home__class-info--list {
-    font-size: 25px;
+#home__class-info--list,
+#home__ptp-info--list,
+#home__event-info--list {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     list-style-position: inside;
+
 }
 
+#home__container--row-two{
+    position: relative;
+    right: 2.5rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
 
+    background-size: cover;
+    background-position: 50% 20%;
+    background-attachment: local;
+    background-repeat: no-repeat;
+}
 
+#home__ptp-info--list,
+#home__event-info--list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
 
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    top: 15rem;
+    width: 100%;
+    color: var(--main-text-color);
+}
 /* =================================== */
 /* global styles end here*/
 /* =================================== */
