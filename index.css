@@ -2,7 +2,7 @@
 
 /* body */
 body {
-    background-image: url('../img/battleground.png');
+    background-image: url('./img/battleground.png');
 }
 /* anchor element styling */
 a {
@@ -15,7 +15,7 @@ a {
 }
 
 #drop-nav--container {
-    background-image: url('../img/btn_normal.png');
+    background-image: url('./img/btn_normal.png');
 }
 
 /* drop-nav styling */
@@ -38,29 +38,29 @@ a {
 }
 
 #news__post {
-    background-image: url('../img/menu_bg.png')
+    background-image: url('./img/menu_bg.png')
 }
 
 #home__container {
-    background-image: url('../img/back_decor.png');
+    background-image: url('./img/back_decor.png');
 }
 
 #home-item-left,
 #home-item-center,
 #home-item-two-center,
 #home-item-two-right {
-    background-image: url('../img/menu_bg.png');
-    list-style-image: url('../img/Icons_12.png');
+    background-image: url('./img/menu_bg.png');
+    list-style-image: url('./img/Icons_12.png');
 }
 
 
 #home__container--row-one {
-    background-image: url('../img/front_decor.png');
+    background-image: url('./img/front_decor.png');
 
 }
 
 #home__container--row-two {
-    background-image: url('../img/game_background_4.png');
+    background-image: url('./img/game_background_4.png');
 
 }
 
