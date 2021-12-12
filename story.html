@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story | Banners of Barrendrake</title>
+    <!--    main script do not remove    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel ='stylesheet'"  href="../css/story.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $(document).ready(function() {
+                $('body').css('opacity', 1);
+            })
+        });
+    </script>
+</head>
+<body>
+<!--    navbar    -->
+<nav class="navbar navbar-expand fixed-top navbar-light" id="nav">
+    <div class="collapse navbar-collapse" id="nav__list--container">
+        <ul class="navbar-nav" id="nav__list">
+            <li class="nav-item">
+                <a href="../html/index.html" class="pe-auto">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/story.html" class="pe-auto">Story</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/classes.html" class="pe-auto">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/races.html" class="pe-auto">Races</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/professions.html" class="pe-auto">Professions</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand navbar-light" id="drop-nav">
+        <div class="container collapse navbar-collapse" id="drop-nav--container">
+            <ul class="navbar-nav" id="drop-nav__list">
+                <li class="nav-item register__btn px-3">
+                    <a href="../html/register.html" class="pe-auto " id="register__btn">Register</a>
+                </li>
+                <li class="nav-item login__btn px-2">
+                    <a href="../html/login.html" class="pe-auto" id="login__btn">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</nav>
+
+<main class="container-fluid" id="story__root">
+    <div class="container-fluid" id="story__root--container">
+
+    </div>
+    <div class="container" id="story__root--body">
+        <h3>A fully-immersive story experience</h3>
+        <div class="row container-fluid g-3" id="story__root--body__content">
+            <div class="col body__content--item" id="body__content--item__one">
+                <h3>A land divided</h3>
+                <hr>
+                <p>The city-state of Barrendrake has experienced turmoil for the last 300 years.
+                    War, poverty, and famine divide the country into three distinct political factions.
+                    Choose a side and decide what the fate of Barrendrake will be. You... and every other
+                    player who will be deciding to join your faction... or deny your faction.</p>
+            </div>
+            <div class="col body__content--item" id="body__content--item__two">
+                <h3>A home destroyed</h3>
+                <hr>
+                <p>Barrendrake is a destitute, impoverished city-state. Your home, Fandale,
+                   was destroyed by the Black Army; How will you avenge your home, your family, your friends?
+                   You decide.</p>
+            </div>
+            <div class="col body__content--item" id="body__content--item__three">
+                <h3>A villain unlike any other</h3>
+                <hr>
+                <p>Banners of Barrendrake has a unique villain: the player. Each season, players can apply
+                   to be the season's villain. Each villain is a General in the Black Army, and has at their
+                   disposal a multitude of weapons, soldiers, and funds to allocate every season. Will
+                   you be the one to unite Barrendrake under the banner of the Black Army? Or will you
+                    be defeated?</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
