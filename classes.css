@@ -1,0 +1,57 @@
+@import url('../css/globalVariables.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+#classes__root {
+    height: 100vh;
+
+    display: flex;
+}
+
+#classes__container {
+    margin-top: 7.5rem;
+}
+
+#classes__cards {
+}
+
+.card-img-top {
+    width: auto;
+}
+
+.card {
+    text-align: center;
+    height: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--tertiary-bg-color);
+}
+
+#classes__quiz {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    color: var(--main-text-color);
+
+    background-image: url('../assets/craftpix-net-123536-game-user-interface-for-rpg/Sliced Images/Chat/scroll_empty.png');
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px;
+}
+
+#score__results {
+    text-align: center;
+}
+
+#tallyBtn {
+    margin-bottom: 5px;
+}
