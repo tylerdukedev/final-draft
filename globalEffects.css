@@ -15,12 +15,21 @@
 #nav,
 #grid__container,
 #item-center,
-caption {
+caption,
+.card {
     filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
 }
 
 #nav > #drop-nav:hover {
     filter: drop-shadow(0 0 0.1rem var(--main-text-color));
+}
+
+.card:hover {
+    transform: scale(105%);
+}
+
+.card::cue {
+
 }
 
 #grid__container--row {
