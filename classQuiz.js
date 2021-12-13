@@ -36,9 +36,9 @@ tallyBtn.addEventListener('click', () => {
         updateHtml('Warrior!');
     } else if (pts === max) {
         updateHtml('Priestess!')
-    } else if (pts >= 10 && pts <= 15) {
+    } else if (pts >= 11 && pts <= 19) {
         updateHtml('Wizard!')
-    } else if (pts >= 16 && pts <= 28) {
+    } else if (pts >= 20 && pts <= 28) {
         updateHtml('Rogue!');
     } else {
         updateHtml('!error! check values')
