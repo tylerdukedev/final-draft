@@ -1,4 +1,4 @@
-@import url('../css/globalVariables.css');
+@import url('./globalVariables.css');
 
 body {
     display: flex;
@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 10px;
-    background: url('../img/battleground.png');
+    background: url('./img/battleground.png');
     border-radius: 15px;
 
 }
@@ -80,7 +80,7 @@ body {
 }
 
 #player-grid {
-    background: url('../img/battleground.png') no-repeat center;
+    background: url('./img/battleground.png') no-repeat center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ body {
 }
 
 #battlefield-grid {
-    background: url('../img/battleground-4.png') no-repeat bottom;
+    background: url('./img/battleground-4.png') no-repeat bottom;
 
 }
 /*enemy grid */
@@ -151,52 +151,52 @@ body {
 
 /*enemy cards*/
 #enemy-card-1 {
-    background-image: url('../img/Dark_elf_card_back.png');
+    background-image: url('./img/Dark_elf_card_back.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #enemy-card-2 {
-    background-image: url('../img/Dark_elf_card_back2.png');
+    background-image: url('./img/Dark_elf_card_back2.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #enemy-card-3 {
-    background-image: url('../img/Dark_elf_card_backf_card_back.png');
+    background-image: url('./img/Dark_elf_card_backf_card_back.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #enemy-card-4 {
-    background-image: url('../img/Civilian_card_back.png');
+    background-image: url('./img/Civilian_card_back.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 /*player cards*/
 #card-1 {
-    background-image: url('../assets/craftpix-net-746299-fantasy-tcg-cards-pixel-art/PNG/Cards_color1/Dark_elf_card_version1/Dark_elf_card_version1_pic2.png');
+    background-image: url('./img/Dark_elf_card_version1_pic2.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #card-2 {
-    background-image: url('../assets/craftpix-net-746299-fantasy-tcg-cards-pixel-art/PNG/Cards_color2/Dark_elf_card_version3/Dark_elf_card_version3_pic1.png');
+    background-image: url('./img/Dark_elf_card_version3_pic1.png');
     background-size: contain;
     background-repeat: no-repeat;
 
 }
 
 #card-3 {
-    background-image: url('../assets/craftpix-net-311481-free-npc-quest-tcg-cards-pixel-art/PNG/Cards_color3/Civilian_card_version3/Civilian_card_version3_pic2.png');
+    background-image: url('./img/Civilian_card_version3_pic2.png');
     background-size: contain;
     background-repeat: no-repeat;
 
 }
 
 #card-4 {
-    background-image: url('../assets/craftpix-net-311481-free-npc-quest-tcg-cards-pixel-art/PNG/Cards_color1/Civilian_card_version2/Civilian_card_version2_pic1.png');
+    background-image: url('./img/Civilian_card_version2_pic1.png');
     background-size: contain;
     background-repeat: no-repeat;
 
