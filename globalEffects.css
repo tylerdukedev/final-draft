@@ -12,11 +12,26 @@
     }
 }
 
+@keyframes hover {
+    0% {
+        transform: scale(105%);
+    }
+    50% {
+        transform: scale(100%);
+
+    }
+    100% {
+        transform: scale(105%);
+
+    }
+}
+
 #nav,
 #grid__container,
 #item-center,
 caption,
-.card {
+.card,
+#info-text {
     filter: drop-shadow(0rem 0.3rem 0.2rem var(--shadow));
 }
 
