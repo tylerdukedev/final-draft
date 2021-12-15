@@ -1,0 +1,269 @@
+@import url('../css/globalVariables.css');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--tertiary-bg-color-second);
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut {
+     0% {
+         opacity: 100%;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+#nav {
+    opacity: 0;
+    animation: fadeOut 1s linear;
+}
+
+#nav:hover {
+    animation: fadeIn 1s linear;
+    opacity: 100%;
+}
+
+#trading__root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#ui {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: url('../img/battleground.png');
+    border-radius: 15px;
+
+}
+
+#trading__grid__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}
+
+/*three play area grids*/
+#player-grid,
+#battlefield-grid,
+#enemy-grid {
+    margin-bottom: 25px;
+    height: 7rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+#player-grid {
+    background: url('../img/battleground.png') no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+}
+
+#battlefield-grid {
+    background: url('../img/battleground-4.png') no-repeat bottom;
+
+}
+/*enemy grid */
+#enemy-grid {
+
+}
+
+/*card containers for pc and ec*/
+#card-container{
+    z-index: 1;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container--enemy {
+    text-align: center;
+}
+
+/*player and enemy hand containers*/
+#card-container__hand {
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#card-container__enemy-hand {
+}
+
+/*enemy and player grids*/
+#pc__grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+#ec__grid {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-card,
+.enemy-card {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 246px;
+    width: 170px;
+    border-radius: 15px;
+}
+
+/*enemy cards*/
+#enemy-card-1 {
+    background-image: url('../img/Dark_elf_card_back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#enemy-card-2 {
+    background-image: url('../img/Dark_elf_card_back2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#enemy-card-3 {
+    background-image: url('../img/Dark_elf_card_backf_card_back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#enemy-card-4 {
+    background-image: url('../img/Civilian_card_back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*player cards*/
+#card-1 {
+    background-image: url('../assets/craftpix-net-746299-fantasy-tcg-cards-pixel-art/PNG/Cards_color1/Dark_elf_card_version1/Dark_elf_card_version1_pic2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#card-2 {
+    background-image: url('../assets/craftpix-net-746299-fantasy-tcg-cards-pixel-art/PNG/Cards_color2/Dark_elf_card_version3/Dark_elf_card_version3_pic1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#card-3 {
+    background-image: url('../assets/craftpix-net-311481-free-npc-quest-tcg-cards-pixel-art/PNG/Cards_color3/Civilian_card_version3/Civilian_card_version3_pic2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#card-4 {
+    background-image: url('../assets/craftpix-net-311481-free-npc-quest-tcg-cards-pixel-art/PNG/Cards_color1/Civilian_card_version2/Civilian_card_version2_pic1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding: 0;
+
+}
+
+#card-4-health,
+#card-2-health {
+    color: white;
+    position: relative;
+    top: -0.15rem;
+    margin: 0;
+    padding: 0;
+}
+
+#card-3-health {
+    color: white;
+    position: relative;
+    top: 3.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+#card-1-health {
+    color: white;
+    position: relative;
+    top: 4.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+#turn-counter,
+#enemy-total-health {
+    color: var(--main-text-color);
+    text-align: center;
+    background: var(--tertiary-bg-color-second);
+    width: 15%;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+#enemy-total-health {
+    margin-bottom: 2.5rem;
+}
+
+#info-text__updates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 42px;
+}
+
+#info-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 25%;
+    height: 50%;
+
+}
+
+#info-text__updates {
+    background: var(--main-bg-color);
+}
