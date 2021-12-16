@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes | Banners of Barrendrake</title>
+    <!--    main script do not remove    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" as="style" onload="this.rel ='stylesheet'"  href="../css/professions.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/classQuiz.js" defer></script>
+    <script>
+        $(window).on("load", function() {
+            $(document).ready(function() {
+                $('body').css('opacity', 1);
+            })
+        });
+    </script>
+</head>
+<body>
+<!--    navbar    -->
+<nav class="navbar navbar-expand fixed-top navbar-light" id="nav">
+    <div class="collapse navbar-collapse" id="nav__list--container">
+        <ul class="navbar-nav" id="nav__list">
+            <li class="nav-item">
+                <a href="../html/index.html" class="pe-auto">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/story.html" class="pe-auto">Story</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/classes.html" class="pe-auto">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/races.html" class="pe-auto">Races</a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/professions.html" class="pe-auto">Professions</a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-expand navbar-light" id="drop-nav">
+        <div class="container collapse navbar-collapse" id="drop-nav--container">
+            <ul class="navbar-nav" id="drop-nav__list">
+                <li class="nav-item register__btn px-3">
+                    <a href="../html/login.html" class="pe-auto " id="register__btn">Register</a>
+                </li>
+                <li class="nav-item login__btn px-2">
+                    <a href="../html/login.html" class="pe-auto" id="login__btn">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</nav>
+
+<main class="container-fluid" id="professions__root">
+    <div class="container-fluid" id="professions__root--banner">
+        <h1>Bannerdrake</h1>
+        <h3>Professions</h3>
+    </div>
+    <div class="container-fluid" id="professions__root--info">
+        <div class="container-fluid" id="professions__root--professions-grid">
+            <div class="container-fluid" id="professions__root--professions--row-container">
+                <h5>Open Professions</h5>
+                <p>These professions are immediately available and open to all players starting at level 30 and up</p>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Chef
+                    </div>
+                    <div class="col">
+                        Entrepreneur
+                    </div>
+                    <div class="col">
+                        Farmer
+                    </div>
+                    <div class="col">
+                        Mercenary
+                    </div>
+                </div>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Hunter
+                    </div>
+                    <div class="col">
+                        Stonemason
+                    </div>
+                    <div class="col">
+                        Carpenter
+                    </div>
+                    <div class="col">
+                        Contractor
+                    </div>
+                </div>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Boilermaker
+                    </div>
+                    <div class="col">
+                        Banker
+                    </div>
+                    <div class="col">
+                        Criminal
+                    </div>
+                    <div class="col">
+                        Pastor
+                    </div>
+                </div>
+                <hr>
+                <h5>Closed Professions</h5>
+                <p>These professions have special requirements the player must meet, and are only opened up to
+                    players as needed to maintain the game's economic balance</p>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Naval Officer
+                    </div>
+                    <div class="col">
+                        Attorney
+                    </div>
+                    <div class="col">
+                        Law Officer
+                    </div>
+                    <div class="col">
+                        Judge
+                    </div>
+                </div>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Commander
+                    </div>
+                    <div class="col">
+                        Villain
+                    </div>
+                    <div class="col">
+                        Doctor
+                    </div>
+                    <div class="col">
+                        Nurse
+                    </div>
+                </div>
+                <div class="row row-cols-4 professions--row">
+                    <div class="col">
+                        Cavalry Officer
+                    </div>
+                    <div class="col">
+                        Archivist
+                    </div>
+                    <div class="col">
+                        Professor
+                    </div>
+                    <div class="col">
+                        Guild Master
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
