@@ -1,0 +1,14 @@
+@import url('../css/globalVariables.css');
+
+#nav {
+    height: 11%;
+}
+
+#success__root {
+    font-size: 52px;
+    text-align: center;
+    background: var(--tertiary-bg-color-second);
+    margin-top: 5.5rem;
+    color: var(--main-bg-color);
+    border-radius: 15px;
+}

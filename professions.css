@@ -1,0 +1,32 @@
+@import url('../css/globalVariables.css');
+
+body {
+}
+#professions__root {
+    color: var(--main-text-color);
+    width: 100%;
+    margin-top: 5.5rem;
+}
+
+#professions__root--banner {
+    text-align: center;
+    background: var(--tertiary-bg-color);
+    border-radius: 15px;
+}
+
+#professions__root--info {
+    background: var(--tertiary-bg-color);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 36px;
+}
+
+.professions--row {
+    color: var(--main-text-color);
+    margin-bottom: 3px;
+    border-radius: 15px
+}
+
+.row {
+    background: var(--tertiary-bg-color-second);
+}
