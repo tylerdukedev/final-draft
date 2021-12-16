@@ -13,7 +13,7 @@ submitBtn.addEventListener('click', (e) => {
         let firstName = document.querySelector('#validationDefault01').value;
         window.location.href = "mailto:" +
             " tylerdukedev@gmail.com?subject=Contact%20Me&body=%20Hello,%20"+firstName+"!%20Want%20to%20hire%20me?%20%20Send%20your%20comments,%20questions,%20and%20concerns%20here!";
-        window.location.href = '../html/success.html';
+        window.location.href = './success.html';
 
     }
 });
